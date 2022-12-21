@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MainScene.unity
     guid: 8a8e1a86947017144a2745a6babae531
   - enabled: 1
-    path: Assets/Scenes/BreathScene.unity
+    path: Assets/Scenes/Breath/BreathScene.unity
     guid: 1ebce24037b71d442bdd4a70794cf891
   - enabled: 1
     path: Assets/Scenes/Circulatory_System.unity
@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/HormoneScene.unity
     guid: 6befd67d19eb3dd4a84424845df1789b
+  - enabled: 1
+    path: Assets/Scenes/Breath/BreathMiniGame.unity
+    guid: 453672c7184b91f49ae718f9fd0c7981
   m_configObjects: {}

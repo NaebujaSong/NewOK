@@ -7,10 +7,10 @@ public class poop : MonoBehaviour {
     [SerializeField]
     private Animator animator;
 
-    private Rigidbody2D rigidbody;
+    private Rigidbody2D _rigidbody;
 	// Use this for initialization
 	void Start () {
-        rigidbody = GetComponent<Rigidbody2D>();
+        _rigidbody = GetComponent<Rigidbody2D>();
     }
 	
 	// Update is called once per frame
