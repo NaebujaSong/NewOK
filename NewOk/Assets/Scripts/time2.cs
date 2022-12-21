@@ -18,7 +18,7 @@ public class time2 : MonoBehaviour
                 slTimer2.value += 0.3f * Time.deltaTime;
             }
             else{
-                Debug.Log("두번째 배송 끝");
+                time1.notStart2 = 1;
             }
         }
     }

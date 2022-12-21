@@ -13,10 +13,13 @@ public class Siren_Circulatory : MonoBehaviour
     void Start()
     {
         state = false;
-        StageManager = GameObject.Find("num_sugar"); //혈당 변수 찾기
-        num_sugar = StageManager.GetComponent<SceneChange>.num_sugar; //혈당 변수 가져오기
-        StageManager = GameObject.Find("num_insulin"); //인슐린 변수 찾기
-        num_insulin = StageManager.GetComponent<SceneChange>.num_insulin; //인슐린 변수 가져오기
+        //StageManager = GameObject.Find("num_sugar"); //혈당 변수 찾기
+        //num_sugar = StageManager.GetComponent<SceneChange>.num_sugar; //혈당 변수 가져오기
+        //StageManager = GameObject.Find("num_insulin"); //인슐린 변수 찾기
+        //num_insulin = StageManager.GetComponent<SceneChange>.num_insulin; //인슐린 변수 가져오기
+
+        num_sugar = StateChange.bloodSugar;
+        int num_insulin = 150;
     }
 
     // Update is called once per frame

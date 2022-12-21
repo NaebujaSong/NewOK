@@ -12,7 +12,7 @@ class States
 public class StateChange : MonoBehaviour
 {
     // 변수명: 순서대로 근육량, 혈당, 수분량, 스트레스, 피로도
-    public int muscleMass = 0, bloodSugar = 0, moisture= 0, stress = 0, fatigue = 0;
+    public static int muscleMass = 0, bloodSugar = 0, moisture= 0, stress = 0, fatigue = 0;
 
     public void ClickBtn() 
     {

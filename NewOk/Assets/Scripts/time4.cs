@@ -18,7 +18,7 @@ public class time4 : MonoBehaviour
                 slTimer4.value += 0.4f * Time.deltaTime;
             }
             else{
-                Debug.Log("네번째 배송 끝");
+                time1.notStart4 = 1;
             }
         }
     }

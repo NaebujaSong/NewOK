@@ -1,26 +1,36 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.StateChange;
+//using UnityEngine.Vector3;
+//using System.Object;
+//using UnityEngine.StateChange;
 
 public class Circulatory : MonoBehaviour
 {
     int num_cholesterol, num_sugar;
+    float x,y,z;
     int num_insulin = 150;
-    GameObject StageManager;
+    //GameObject StageManager;
     float speed = 3.0f;
     bool state;
+    GameObject sugar;
+    GameObject insulin;
+    GameObject k;
+    float[] positionX_sugar;
+    float[] positionY_sugar;
+    GameObject[] list_insulin;
 
     void Start()
     {
         state = false;
-        StageManager = GameObject.Find("bloodSugar"); //혈당 변수 찾기
-        num_sugar = StageManager.GetComponent<StateChange>.bloodSugar; //혈당 변수 가져오기
+        //StageManager = GameObject.Find("bloodSugar"); //혈당 변수 찾기
+        //num_sugar = StageManager.GetComponent<StateChange>.bloodSugar; //혈당 변수 가져오기
+        num_sugar = StateChange.bloodSugar;
 
-        int[] positionX_sugar = new int[num_sugar];
-        int[] positionY_sugar = new int[num_sugar];
-        int[] positionX_insulin = new int[num_insulin];
-        int[] positionY_insulin = new int[num_insulin];
+        float[] positionX_sugar = new float[num_sugar];
+        float[] positionY_sugar = new float[num_sugar];
+        float[] positionX_insulin = new float[num_insulin];
+        float[] positionY_insulin = new float[num_insulin];
         GameObject[] list_sugar = new GameObject[num_sugar];
         GameObject[] list_insulin = new GameObject[num_insulin];
         
@@ -29,7 +39,7 @@ public class Circulatory : MonoBehaviour
             float randomY = Random.Range(0f, 1080f);
             positionX_sugar[i] = randomX;
             positionY_sugar[i] = randomY;
-            GameObject sugar = (GameObject)Instantiate(obj, new Vextor3(randomX, randomY, 0f), Quaternion.identity);
+            sugar = (GameObject)Instantiate(sugar, new Vector3(randomX, randomY, 0f), Quaternion.identity);
             list_sugar[i] = sugar;
         }
 
@@ -38,7 +48,7 @@ public class Circulatory : MonoBehaviour
             float randomY = Random.Range(0f, 1080f);
             positionX_insulin[i] = randomX;
             positionY_insulin[i] = randomY;
-            GameObject insulin = (GameObject)Instantiate(obj, new Vextor3(randomX, randomY, 0f), Quaternion.identity);
+            insulin = (GameObject)Instantiate(insulin, new Vector3(randomX, randomY, 0f), Quaternion.identity);
             list_insulin[i] = insulin;
         }
         
@@ -48,8 +58,10 @@ public class Circulatory : MonoBehaviour
     void Update()
     {
         for ( int i = 0 ; i < num_insulin ; i++ ){ //인슐린이 혈당 캐치
-        transform.insulin[i] = Vector3.MoveTowards(transform.insulin[i], 
-        new Vector3(positionX_sugar, positionY_sugar, 0), Time.deltaTime * speed);
+        x = positionX_sugar[i];
+        y = positionY_sugar[i];
+        k = list_insulin[i];
+        //k = Vector3.MoveTowards(k, new Vector3(x, y, 0), Time.deltaTime * speed);
         }
 
     }
