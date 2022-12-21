@@ -1152,6 +1152,7 @@ GameObject:
   - component: {fileID: 2121594356}
   - component: {fileID: 2121594358}
   - component: {fileID: 2121594357}
+  - component: {fileID: 2121594359}
   m_Layer: 5
   m_Name: Siren_1
   m_TagString: Untagged
@@ -1176,8 +1177,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -114, y: 99}
-  m_SizeDelta: {x: 64.777, y: 64.2133}
+  m_AnchoredPosition: {x: -110, y: 99.502}
+  m_SizeDelta: {x: 60.2376, y: 59.1612}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2121594357
 MonoBehaviour:
@@ -1217,3 +1218,15 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2121594355}
   m_CullTransparentMesh: 1
+--- !u!114 &2121594359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121594355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4223446045def3946acd06ad4c7ea35c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
