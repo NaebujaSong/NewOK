@@ -718,6 +718,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1607047767}
   - component: {fileID: 1607047766}
+  - component: {fileID: 1607047769}
+  - component: {fileID: 1607047768}
   - component: {fileID: 1607047770}
   m_Layer: 0
   m_Name: SceneManager
@@ -756,6 +758,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1607047768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1607047765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9ac31eb1ea356541a26056efbbe954f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1607047769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1607047765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb3cc435b37a46744be058c697656542, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1607047770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -870,12 +896,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1790677627}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 727bc279ac127ba44b47be21283997d9, type: 3}
+  m_Script: {fileID: 11500000, guid: dd00c0f4b2e74604e957667e4810ca72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChatText: {fileID: 0}
-  skipButton: 
-  writerText: 
 --- !u!4 &1790677629
 Transform:
   m_ObjectHideFlags: 0
