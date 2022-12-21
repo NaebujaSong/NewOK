@@ -9,6 +9,7 @@ public class time3 : MonoBehaviour
     public float fSliderBarTime;
     void Start() {
         slTimer3 = GetComponent<Slider>();
+        time1.notStart4 = 0;
     }
  
     void Update()
@@ -18,7 +19,8 @@ public class time3 : MonoBehaviour
                 slTimer3.value += 0.1f * Time.deltaTime;
             }
             else{
-                Debug.Log("세번째 배송 끝");
+                time1.notStart3 = 1;
+                time1.sl3 = 1;
             }
         }
     }

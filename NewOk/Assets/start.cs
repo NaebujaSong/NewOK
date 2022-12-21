@@ -13,11 +13,10 @@ public class start : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        slider1.SetActive(false);
+        slider1.SetActive(true);
         slider2.SetActive(false);
         slider3.SetActive(false);
         slider4.SetActive(false);
-        time1.slTimer1.value = 0;
     }
 
     void Update(){
