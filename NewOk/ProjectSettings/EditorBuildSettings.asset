@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MainScene.unity
     guid: 8a8e1a86947017144a2745a6babae531
   - enabled: 1
-    path: Assets/Scenes/Breath/BreathScene.unity
+    path: Assets/Scenes/BreathScene.unity
     guid: 1ebce24037b71d442bdd4a70794cf891
   - enabled: 1
     path: Assets/Scenes/Circulatory_System.unity

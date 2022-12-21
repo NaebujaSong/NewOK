@@ -54,7 +54,7 @@ public class GameManager : MonoBehaviour {
         if(score >= PlayerPrefs.GetInt("BestScore", 0))
         PlayerPrefs.SetInt("BestScore", score);
 
-        bestScore.text = PlayerPrefs.GetInt("BestScore",0).ToString();
+        bestScore.text = PlayerPrefs.GetInt("BestScore", 0).ToString();
                 
         panel.SetActive(true);
     }
